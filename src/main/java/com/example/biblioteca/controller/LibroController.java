@@ -28,7 +28,7 @@ public class LibroController {
     @PostMapping
     public void guardarOActualizarLibro(@RequestBody Libro libro) { this.libroServiceImpl.guardarOActualizarLibro(libro); }
 
-    @DeleteMapping("/libroid")
+    @DeleteMapping("/{libroId}")
     public void eliminarLibro(@PathVariable("libroId") Long libroId) { this.libroServiceImpl.eliminarLibro(libroId); }
 
 
